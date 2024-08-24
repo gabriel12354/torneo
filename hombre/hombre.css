@@ -1,0 +1,21 @@
+.camisa1{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    left: 138px;
+    top: 290px;
+    margin-bottom: 20px;
+    font-size: 80px;
+    
+}
+
+.salir{
+    width: 60px;
+    height: 100px;
+    position: absolute;
+    left: 30px;
+    top: 0px;
+    font-size: 80px;
+    color: brown
+
+}

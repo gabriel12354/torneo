@@ -1,0 +1,120 @@
+<html>
+<head>
+     <link rel="stylesheet" href="hombre.css">
+     <style>
+          a {
+               cursor: pointer;
+               text-decoration: none;
+          }
+          .whatsapp {
+               width: 80px;
+               height: 60px;
+               position: absolute;
+               left: 30px;
+               top: 830px;
+               font-size: 280px;  
+          }
+          .camisa1{
+          width: 600px;
+          height: 100px;
+          position: absolute;
+          left: 138px;
+          top: 220px;
+          margin-bottom: 20px;
+          font-size: 80px;
+    
+          }
+          .salir{
+          width: 60px;
+          height: 100px;
+          position: absolute;
+          left: 30px;
+          top: 0px;
+          font-size: 80px;
+          color: brown
+
+}
+        
+
+     </style>
+</head>
+<body>
+
+     <img src="mujer-camisetadealgodon.jpg">
+
+     <div class="salir">
+           
+               <a onclick="history.back()">        </a>
+           </button>
+           
+     </div>
+     <img class="whatsapp" src="whatsapp.png">
+
+     
+     <style>
+          .copy-area {
+     
+               position: absolute;
+               top: 860;
+               left: 230;
+               transform: translate(-50%, -50%);
+               border: 1px solid;
+               background-color: azure;
+               border-radius: 20px;
+               padding: 10px;
+          }
+          .copy-area textarea{
+               box-sizing: border-box;
+               background-color: rgb(94, 255, 80);
+               height: 20px;
+               resize: none;
+               border: none;
+               outline: 10px;
+          }
+          .copy-area button {
+               position: absolute;
+               padding: 5px 10px;
+               color: rgb(1, 4, 7);
+               right: 10px;
+               top: 5px;
+               border-radius: 10px;
+               cursor: pointer;
+               background-color: rgb(4, 196, 255);
+          }
+          .copy-area button:active {
+               background-color: aquamarine;
+               color: beige;
+     
+          }
+          .copy-area button::before {
+     
+               content: "copiado";
+               display: none;
+          }
+          .copy-area.active button::before {
+               display: block;
+          }
+          
+         </style>
+         <script>
+          function copy() {
+               let copyArea=document.querySelector(".copy-area");
+               let text = document.getElementById("myArea");
+               text.select();
+               document.execCommand("copy");
+               document.getElementById("copy-btn").style.display = "none";
+               copyArea.classList.add("active");
+               window.getSelection().removeAllRanges();
+               setTimeout(() => {
+                    
+               }, 4);
+          }
+         </script>
+          <div class="copy-area">
+               <textarea id="myArea" cols="30" rows="10" >+593 98 264 0850</textarea>
+               <button onclick="copy()">
+                    <span id="copy-btn">copy</span>
+               </button>
+          </div>
+</body>
+</html>
